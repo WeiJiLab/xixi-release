@@ -1,0 +1,3 @@
+e1ac01dbb6b53fde2d6e3ac4608aec925b1cd650e68543970b21b0ad8d97ac1f  xixifree-ai.apk
+5f9cfb49a900a452c94ea4b0b50a12ac869a5608aec2dbc7df264995af6b3110  xixi-system-runtime.apk
+8d374ee4a0bcaa55cf58219e8b0eb8d66eb030aa25eda526543fe5e8d4cd0275  xixi-Desktop-Node-macOS.dmg
