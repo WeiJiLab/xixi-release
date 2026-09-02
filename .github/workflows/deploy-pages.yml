@@ -1,0 +1,46 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'docs/images/**'
+      - 'releases/latest.json'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/configure-pages@v6
+      - name: Prepare static site
+        run: |
+          set -euo pipefail
+          mkdir -p _site/assets _site/releases
+          cp -R site/. _site/
+          cp docs/images/desktop-console.png _site/assets/desktop-console.png
+          cp docs/images/xixifree-mobile.png _site/assets/xixifree-mobile.png
+          cp docs/images/xixifree-logs.png _site/assets/xixifree-logs.png
+          cp docs/images/xixi-runtime-mobile.png _site/assets/xixi-runtime-mobile.png
+          cp releases/latest.json _site/releases/latest.json
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

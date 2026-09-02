@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07110e">
+  <meta name="description" content="xixiFree 与 xixi Desktop：通过文字或语音操作 Android 应用，在手机、电脑与未来云端之间灵活选择设备。">
+  <meta property="og:title" content="xixi — 让每一台 Android 设备都更容易使用">
+  <meta property="og:description" content="下载 xixiFree Android 版与 xixi Desktop，了解云手机、MCP 与 OEM/ODM 合作方向。">
+  <meta property="og:image" content="./assets/desktop-console.png">
+  <title>xixi · Mobile AI Agent</title>
+  <link rel="icon" href="./assets/xixi-free-icon.png">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="xixi 首页">
+      <img src="./assets/xixi-free-icon.png" alt="" width="38" height="38">
+      <span>xixi</span>
+    </a>
+    <nav aria-label="主导航">
+      <a href="#products">产品</a>
+      <a href="#future">方向</a>
+      <a href="#install">安装</a>
+    </nav>
+    <a class="header-download" href="#download">免费下载</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy reveal">
+        <p class="eyebrow">MOBILE AI AGENT · FREE PREVIEW</p>
+        <h1><span class="brand-word">xixi</span><br>让 Android<br><span class="nowrap">听懂你的目标</span></h1>
+        <p class="hero-lead">用文字或语音完成手机任务，也可以把工作交给电脑里的独立 Android 环境。</p>
+        <div class="hero-actions">
+          <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk">下载 Android 版</a>
+          <a class="button quiet" href="#desktop">了解 Desktop <span aria-hidden="true">↘</span></a>
+        </div>
+        <p class="build-note"><span class="live-dot"></span><span data-version-label>正在读取最新构建</span></p>
+      </div>
+
+      <div class="hero-stage" data-parallax aria-label="xixi Desktop 与 xixiFree 产品画面">
+        <div class="desktop-frame">
+          <div class="window-bar"><i></i><i></i><i></i><span>xixi Runtime Console</span></div>
+          <img src="./assets/desktop-console.png" alt="xixi Desktop 控制台正在管理本地 Android 虚拟设备">
+        </div>
+        <div class="phone-frame">
+          <span class="phone-speaker"></span>
+          <img src="./assets/xixifree-mobile.png" alt="xixiFree 手机端语音操作界面">
+        </div>
+      </div>
+      <a class="scroll-cue" href="#products"><span></span>向下探索</a>
+    </section>
+
+    <section class="statement reveal" aria-label="产品愿景">
+      <p>一个目标，多种设备。</p>
+      <h2>需要个人手机时，用无障碍协助；<br>需要稳定环境时，把任务交给 Desktop。</h2>
+    </section>
+
+    <section class="products" id="products">
+      <article class="product-row reveal" id="free">
+        <div class="product-index">01 / MOBILE</div>
+        <div class="product-copy">
+          <p class="eyebrow coral">XIXI FREE · ANDROID</p>
+          <h2>陪你一起操作<br>正在使用的手机</h2>
+          <p>无需 Root、无需安装电脑端。xixiFree 通过用户授权的无障碍能力理解页面、执行操作，并在需要时把控制权交还给你。</p>
+          <ul class="feature-lines">
+            <li><span>文字与语音</span>自然表达任务，支持会话历史与 TTS 反馈</li>
+            <li><span>应用知识</span>在授权下积累页面蓝图，减少重复尝试</li>
+            <li><span>远端切换</span>连接 Desktop Runtime，操作独立设备环境</li>
+          </ul>
+          <a class="text-link js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk">下载 xixiFree APK <span>↓</span></a>
+        </div>
+        <figure class="mobile-showcase">
+          <div class="mobile-shot main-shot"><img src="./assets/xixifree-mobile.png" alt="xixiFree 主界面"></div>
+          <div class="mobile-shot detail-shot"><img src="./assets/xixifree-logs.png" alt="xixiFree 诊断日志界面"></div>
+          <figcaption>手机端主界面与可复制的诊断日志</figcaption>
+        </figure>
+      </article>
+
+      <article class="product-row desktop-row reveal" id="desktop">
+        <div class="product-index">02 / DESKTOP</div>
+        <figure class="desktop-showcase">
+          <img src="./assets/desktop-console.png" alt="xixi Desktop 控制台完整截图">
+          <figcaption>设备启停、实时画面、Agent 操作、性能状态与日志集中在一个控制台</figcaption>
+        </figure>
+        <div class="product-copy">
+          <p class="eyebrow mint">XIXI DESKTOP · macOS</p>
+          <h2>在你的电脑上<br>运行独立 Android</h2>
+          <p>开箱管理本地 Android 虚拟设备，保留更强的系统操作能力；手机可以通过局域网连接，也可以直接在 Desktop 中输入任务。</p>
+          <ul class="feature-lines">
+            <li><span>本地运行</span>设备、账号与数据留在自己的电脑</li>
+            <li><span>实时控制</span>查看画面、日志和运行状态，随时人工接管</li>
+            <li><span>统一 Runtime</span>为自动化、测试与远程生产力提供稳定环境</li>
+          </ul>
+          <a class="text-link js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg">下载 macOS DMG <span>↓</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="workflow reveal" aria-labelledby="workflow-title">
+      <div class="section-heading">
+        <p class="eyebrow">ONE TASK · THREE MOMENTS</p>
+        <h2 id="workflow-title">从一句话，到可观察的执行</h2>
+      </div>
+      <ol class="workflow-line">
+        <li><b>01</b><span>描述目标</span><small>文字、语音或外部 AI 客户端</small></li>
+        <li><b>02</b><span>选择环境</span><small>个人手机或 Desktop Runtime</small></li>
+        <li><b>03</b><span>观察与接管</span><small>查看进度，必要时暂停或人工操作</small></li>
+        <li><b>04</b><span>沉淀知识</span><small>授权后形成应用页面与操作路径</small></li>
+      </ol>
+    </section>
+
+    <section class="future" id="future">
+      <div class="future-intro reveal">
+        <p class="eyebrow coral">ROADMAP & COLLABORATION</p>
+        <h2>从个人工具，走向多终端的移动智能体基础设施</h2>
+        <p>以下能力处于技术预览、规划或合作探索阶段，将随产品验证逐步开放。</p>
+      </div>
+      <div class="future-list">
+        <article class="future-item reveal">
+          <span>云端服务</span>
+          <h3>按需启动云手机，承接长期与定时任务</h3>
+          <p>面向巡检、测试、数据采集矩阵和多任务工作流，规划弹性设备池、任务调度与可追踪执行记录。</p>
+          <em>PLANNED</em>
+        </article>
+        <article class="future-item reveal">
+          <span>MCP 服务</span>
+          <h3>让外部 AI 客户端调用 Android Runtime</h3>
+          <p>技术预览已支持截图、读取界面、输入与端侧 Agent 任务，为开发者工具和企业 Agent 提供设备能力。</p>
+          <em>TECH PREVIEW</em>
+        </article>
+        <article class="future-item reveal">
+          <span>OEM / ODM</span>
+          <h3>把移动 Agent 深度带入手机、车机与智能设备</h3>
+          <p>探索系统级预装、设备能力适配、联合品牌、私有化部署与行业工作流，让智能体成为终端原生能力。</p>
+          <em>PARTNERSHIP</em>
+        </article>
+        <article class="future-item reveal">
+          <span>企业方案</span>
+          <h3>在本地、私有云和公有云之间灵活编排</h3>
+          <p>面向办公自动化、移动测试与设备运营，规划统一控制台、权限治理、审计和异常上报。</p>
+          <em>ROADMAP</em>
+        </article>
+      </div>
+    </section>
+
+    <section class="install" id="install">
+      <div class="section-heading reveal">
+        <p class="eyebrow">START IN MINUTES</p>
+        <h2>选择你的使用方式</h2>
+      </div>
+      <div class="install-switcher reveal" role="tablist" aria-label="安装方式">
+        <button id="tab-mobile" role="tab" aria-selected="true" aria-controls="panel-mobile">Android 手机</button>
+        <button id="tab-desktop" role="tab" aria-selected="false" aria-controls="panel-desktop" tabindex="-1">macOS Desktop</button>
+      </div>
+      <div class="install-panel" id="panel-mobile" role="tabpanel" aria-labelledby="tab-mobile">
+        <div class="install-title"><span>ANDROID 11+</span><h3>无需 Root，安装后按引导授权</h3></div>
+        <ol>
+          <li><b>下载 APK</b><p>在手机浏览器下载 xixiFree；如系统拦截，临时允许当前浏览器安装未知应用。</p></li>
+          <li><b>配置模型</b><p>打开设置，选择模型并填写必需的 API Key。高级参数保持默认即可。</p></li>
+          <li><b>开启无障碍</b><p>根据应用引导开启 xixiFree 无障碍服务和屏幕捕获授权。</p></li>
+          <li><b>说出目标</b><p>返回会话页，通过文字或按住语音按钮发出第一条任务。</p></li>
+        </ol>
+        <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk">下载 xixiFree APK</a>
+      </div>
+      <div class="install-panel" id="panel-desktop" role="tabpanel" aria-labelledby="tab-desktop" hidden>
+        <div class="install-title"><span>macOS 13+</span><h3>先准备 Android 环境，再安装 Desktop</h3></div>
+        <ol>
+          <li><b>一行命令准备环境</b><p>在终端运行下方命令，自动安装 ADB、Emulator 和默认 AVD。</p></li>
+          <li class="command-step"><code>curl -fsSL https://raw.githubusercontent.com/WeiJiLab/xixi-release/main/scripts/setup-desktop-macos.sh | bash</code><button type="button" data-copy-command>复制</button></li>
+          <li><b>安装 Desktop</b><p>打开 DMG，把 xixi Desktop Node 拖入“应用程序”。首次启动可在“隐私与安全性”中选择仍要打开。</p></li>
+          <li><b>启动设备</b><p>在控制台选择默认设备并启动；需要手机连接时，再开启远程访问并按页面配对。</p></li>
+        </ol>
+        <a class="button primary js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg">下载 Desktop DMG</a>
+      </div>
+    </section>
+
+    <section class="download" id="download">
+      <div class="download-watermelon" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="download-copy reveal">
+        <p class="eyebrow">DOWNLOAD THE LATEST BUILD</p>
+        <h2>从今天开始，<br>少点几下屏幕。</h2>
+        <p>免费预览版持续更新。登录、验证码、支付和其他敏感操作，请始终由用户本人确认。</p>
+      </div>
+      <div class="download-actions reveal">
+        <a class="download-row js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk"><span><b>xixiFree</b><small>Android 11+ · APK</small></span><i>↓</i></a>
+        <a class="download-row js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg"><span><b>xixi Desktop</b><small>macOS · DMG</small></span><i>↓</i></a>
+        <a class="download-row" href="https://github.com/WeiJiLab/xixi-release/releases"><span><b>全部版本</b><small>Release notes & checksums</small></span><i>↗</i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand" href="#top"><img src="./assets/xixi-free-icon.png" alt="" width="34" height="34"><span>xixi</span></a>
+    <p>让更多人以更低成本使用智能设备。</p>
+    <div><a href="https://github.com/WeiJiLab/xixi-release">GitHub</a><a href="https://github.com/WeiJiLab/xixi-release/issues">反馈问题</a><a href="#future">合作方向</a></div>
+    <small>© 2026 Inspire Group · Preview software</small>
+  </footer>
+</body>
+</html>
