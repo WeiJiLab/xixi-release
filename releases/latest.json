@@ -1,16 +1,13 @@
 {
-  "version": "v0.3.0",
-  "versionName": "0.3.0",
-  "sourceCommit": "314a0d55d3398e557c16489df6dfef7804508bb7",
-  "sourceRun": "33581741683",
+  "version": "v0.3.2",
+  "versionName": "0.3.2",
+  "sourceCommit": "5c523d39f3c2ea22f980ff059cc458f8fc405d07",
+  "sourceRun": "33587654959",
   "stable": true,
-  "releasedAt": "2026-08-10",
+  "releasedAt": null,
   "highlights": [
-    "新增持久化会话管理，可查看、切换并继续历史任务。",
-    "新增 Desktop / Cloud 实时远控 Beta，支持画面、点击、滑动和系统按键。",
-    "设置页整合模型、远端设备、显示、日志和实验功能。",
-    "新增聊天截图完整、精简和隐藏三种显示策略。",
-    "Desktop 远程网关优化并发请求与 JPEG 画面传输。",
-    "修复停止任务后仍继续重试，以及远端坐标偏移等问题。"
+    "xixiFree 与 Desktop 应用图标移除外围黑色背景，改为真实透明 PNG 边缘。",
+    "官网品牌图标与 favicon 改用无 `FREE` 角标的通用 xixi 品牌图标。",
+    "xixiFree 手机应用继续保留 `FREE` 角标，用于区分免费版本。"
   ]
 }

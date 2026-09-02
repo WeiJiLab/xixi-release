@@ -8,11 +8,11 @@ xixi.ai 可以通过文字指令协助操作 Android 应用。本仓库仅提供
 
 | 产品 | 下载 |
 |---|---|
-| xixiFree Android 版 | [下载 APK](releases/v0.3.0/xixifree-ai.apk) |
-| xixi Desktop macOS 版 | [下载 DMG](releases/v0.3.0/xixi-Desktop-Node-macOS.dmg) |
-| xixi Runtime | [下载 APK](releases/v0.3.0/xixi-system-runtime.apk) |
+| xixiFree Android 版 | [下载 APK](releases/v0.3.2/xixifree-ai.apk) |
+| xixi Desktop macOS 版 | [下载 DMG](releases/v0.3.2/xixi-Desktop-Node-macOS.dmg) |
+| xixi Runtime | [下载 APK](releases/v0.3.2/xixi-system-runtime.apk) |
 
-文件校验信息见 [SHA256SUMS.txt](releases/v0.3.0/SHA256SUMS.txt)。
+文件校验信息见 [SHA256SUMS.txt](releases/v0.3.2/SHA256SUMS.txt)。
 
 ## 安装手机端
 
