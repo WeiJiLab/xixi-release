@@ -1,5 +1,4 @@
 const repoRoot = 'https://github.com/WeiJiLab/xixi-release';
-const rawRoot = `${repoRoot}/raw/refs/heads/main`;
 
 const header = document.querySelector('[data-header]');
 const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
@@ -31,19 +30,28 @@ async function loadLatestBuild() {
     const response = await fetch('./releases/latest.json', { cache: 'no-store' });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const build = await response.json();
-    const folder = encodeURIComponent(build.version || 'nightly');
-    const label = build.stable
-      ? `最新稳定版 ${build.version}`
-      : `最新测试版 ${build.versionName || build.version || 'nightly'}`;
+    const version = build.version || 'v0.3.0';
+    const folder = encodeURIComponent(version);
+    const label = `最新版本 ${version}`;
     document.querySelectorAll('[data-version-label]').forEach((node) => { node.textContent = label; });
     document.querySelectorAll('.js-download-free').forEach((link) => {
-      link.href = `${rawRoot}/releases/${folder}/xixifree-ai.apk`;
+      link.href = `${repoRoot}/releases/download/${folder}/xixifree-ai.apk`;
     });
     document.querySelectorAll('.js-download-desktop').forEach((link) => {
-      link.href = `${rawRoot}/releases/${folder}/xixi-Desktop-Node-macOS.dmg`;
+      link.href = `${repoRoot}/releases/download/${folder}/xixi-Desktop-Node-macOS.dmg`;
     });
+    document.querySelectorAll('[data-release-version]').forEach((node) => { node.textContent = version; });
+    document.querySelectorAll('[data-release-date]').forEach((node) => { node.textContent = build.releasedAt || ''; });
+    document.querySelectorAll('[data-release-link]').forEach((link) => { link.href = `${repoRoot}/releases/tag/${folder}`; });
+    if (Array.isArray(build.highlights) && build.highlights.length) {
+      document.querySelectorAll('[data-changelog]').forEach((list) => {
+        list.replaceChildren(...build.highlights.map((highlight) => {
+          const item = document.createElement('li'); item.textContent = highlight; return item;
+        }));
+      });
+    }
   } catch (error) {
-    document.querySelectorAll('[data-version-label]').forEach((node) => { node.textContent = '最新测试版可下载'; });
+    document.querySelectorAll('[data-version-label]').forEach((node) => { node.textContent = '当前正式版 v0.3.0'; });
   }
 }
 loadLatestBuild();

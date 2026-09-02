@@ -25,6 +25,7 @@
       <a href="#scenarios">场景</a>
       <a href="#products">产品</a>
       <a href="#future">更多服务</a>
+      <a href="#changelog">更新</a>
       <a href="#install">安装</a>
     </nav>
     <a class="header-download" href="#download">免费下载</a>
@@ -38,8 +39,8 @@
         <h1><span class="brand-word">xixi</span><br>让 Android<br><span class="nowrap">听懂你的目标</span></h1>
         <p class="hero-lead">手机版与桌面版均可直接下载：用文字或语音完成手机任务，也可以把工作交给电脑里的独立 Android 环境。</p>
         <div class="hero-actions">
-          <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk"><span>Android APK</span><small>下载手机版</small></a>
-          <a class="button quiet js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg"><span>macOS DMG</span><small>下载桌面版</small></a>
+          <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixifree-ai.apk"><span>Android APK</span><small>下载手机版</small></a>
+          <a class="button quiet js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixi-Desktop-Node-macOS.dmg"><span>macOS DMG</span><small>下载桌面版</small></a>
         </div>
         <p class="build-note"><span class="live-dot"></span><span data-version-label>正在读取最新构建</span></p>
       </div>
@@ -116,7 +117,7 @@
             <li><span>应用知识</span>在授权下积累页面蓝图，减少重复尝试</li>
             <li><span>远端切换</span>连接 Desktop Runtime，操作独立设备环境</li>
           </ul>
-          <a class="text-link js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk">下载 xixiFree APK <span>↓</span></a>
+          <a class="text-link js-download-free" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixifree-ai.apk">下载 xixiFree APK <span>↓</span></a>
         </div>
         <figure class="mobile-showcase">
           <div class="mobile-shot main-shot"><img src="./assets/xixifree-mobile.png" alt="xixiFree 主界面"></div>
@@ -140,7 +141,7 @@
             <li><span>实时控制</span>查看画面、日志和运行状态，随时人工接管</li>
             <li><span>统一 Runtime</span>为自动化、测试与远程生产力提供稳定环境</li>
           </ul>
-          <a class="text-link js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg">下载 macOS DMG <span>↓</span></a>
+          <a class="text-link js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixi-Desktop-Node-macOS.dmg">下载 macOS DMG <span>↓</span></a>
         </div>
       </article>
     </section>
@@ -196,6 +197,24 @@
       </div>
     </section>
 
+    <section class="changelog" id="changelog">
+      <div class="changelog-title reveal">
+        <p class="eyebrow coral">LATEST RELEASE</p>
+        <h2>每一个版本，<br>对应一段清晰的路线。</h2>
+        <div><strong data-release-version>v0.3.0</strong><span data-release-date>2026-08-10</span></div>
+      </div>
+      <div class="changelog-body reveal">
+        <p>官网与 GitHub Release 共用同一份版本记录；安装包、校验文件和变更说明保持一致。</p>
+        <ul data-changelog>
+          <li>新增持久化会话管理，可查看、切换并继续历史任务。</li>
+          <li>新增 Desktop / Cloud 实时远控 Beta。</li>
+          <li>设置页整合模型、远端设备、显示、日志和实验功能。</li>
+          <li>修复停止任务后仍继续重试和远端坐标偏移问题。</li>
+        </ul>
+        <a class="text-link" data-release-link href="https://github.com/WeiJiLab/xixi-release/releases/tag/v0.3.0">查看完整 Changelog <span>↗</span></a>
+      </div>
+    </section>
+
     <section class="install" id="install">
       <div class="section-heading reveal">
         <p class="eyebrow">START IN MINUTES</p>
@@ -213,7 +232,7 @@
           <li><b>开启无障碍</b><p>根据应用引导开启 xixiFree 无障碍服务和屏幕捕获授权。</p></li>
           <li><b>说出目标</b><p>返回会话页，通过文字或按住语音按钮发出第一条任务。</p></li>
         </ol>
-        <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk">下载 xixiFree APK</a>
+        <a class="button primary js-download-free" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixifree-ai.apk">下载 xixiFree APK</a>
       </div>
       <div class="install-panel" id="panel-desktop" role="tabpanel" aria-labelledby="tab-desktop" hidden>
         <div class="install-title"><span>macOS 13+</span><h3>先准备 Android 环境，再安装 Desktop</h3></div>
@@ -223,7 +242,7 @@
           <li><b>安装 Desktop</b><p>打开 DMG，把 xixi Desktop Node 拖入“应用程序”。首次启动可在“隐私与安全性”中选择仍要打开。</p></li>
           <li><b>启动设备</b><p>在控制台选择默认设备并启动；需要手机连接时，再开启远程访问并按页面配对。</p></li>
         </ol>
-        <a class="button primary js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg">下载 Desktop DMG</a>
+        <a class="button primary js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixi-Desktop-Node-macOS.dmg">下载 Desktop DMG</a>
       </div>
     </section>
 
@@ -235,8 +254,8 @@
         <p>免费预览版持续更新。登录、验证码、支付和其他敏感操作，请始终由用户本人确认。</p>
       </div>
       <div class="download-actions reveal">
-        <a class="download-row js-download-free" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixifree-ai.apk"><span><b>xixiFree</b><small>Android 11+ · APK</small></span><i>↓</i></a>
-        <a class="download-row js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/raw/refs/heads/main/releases/nightly/xixi-Desktop-Node-macOS.dmg"><span><b>xixi Desktop</b><small>macOS · DMG</small></span><i>↓</i></a>
+        <a class="download-row js-download-free" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixifree-ai.apk"><span><b>xixiFree</b><small>Android 11+ · APK</small></span><i>↓</i></a>
+        <a class="download-row js-download-desktop" href="https://github.com/WeiJiLab/xixi-release/releases/download/v0.3.0/xixi-Desktop-Node-macOS.dmg"><span><b>xixi Desktop</b><small>macOS · DMG</small></span><i>↓</i></a>
         <a class="download-row" href="https://github.com/WeiJiLab/xixi-release/releases"><span><b>全部版本</b><small>Release notes & checksums</small></span><i>↗</i></a>
       </div>
     </section>

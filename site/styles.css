@@ -184,6 +184,17 @@ button { font: inherit; }
 .future-contact a i { display: inline-block; margin-left: 12px; font-style: normal; transition: transform .2s ease; }
 .future-contact a:hover i { transform: translate(3px,-3px); }
 
+.changelog { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: .92fr 1.08fr; gap: clamp(60px, 9vw, 140px); padding: 150px clamp(24px, 4vw, 64px); border-bottom: 1px solid var(--line); }
+.changelog-title h2 { margin: 0; font-size: clamp(42px, 5vw, 70px); line-height: 1.05; letter-spacing: -.06em; }
+.changelog-title > div { display: flex; align-items: baseline; gap: 15px; margin-top: 38px; }
+.changelog-title strong { color: var(--mint); font-size: 25px; letter-spacing: -.03em; }
+.changelog-title span { color: #66776e; font: 700 10px/1 ui-monospace,monospace; }
+.changelog-body { align-self: end; }
+.changelog-body > p { margin: 0 0 32px; color: #9baaa1; line-height: 1.75; }
+.changelog-body ul { list-style: none; padding: 0; margin: 0 0 36px; border-top: 1px solid var(--line); }
+.changelog-body li { position: relative; padding: 15px 5px 15px 27px; border-bottom: 1px solid var(--line); color: #bfcbc3; font-size: 13px; line-height: 1.55; }
+.changelog-body li::before { content: ""; position: absolute; left: 2px; top: 22px; width: 6px; height: 6px; border-radius: 50%; background: var(--coral); }
+
 .install { max-width: var(--max); margin: 0 auto; padding: 150px clamp(24px, 4vw, 64px); }
 .install-switcher { display: inline-flex; gap: 4px; padding: 4px; background: #101d18; border: 1px solid var(--line); border-radius: 999px; margin-bottom: 45px; }
 .install-switcher button { padding: 12px 19px; color: #7e9186; background: transparent; border: 0; border-radius: 999px; cursor: pointer; }
@@ -246,6 +257,7 @@ footer small { grid-column: 1 / -1; margin-top: 50px; padding-top: 24px; border-
   .future-item { grid-template-columns: 100px 1fr 90px; }
   .future-item p { grid-column: 2; }
   .future-item em { grid-column: 3; grid-row: 1; }
+  .changelog { grid-template-columns: 1fr; }
   .install-panel { grid-template-columns: 1fr; gap: 35px; }
   .install-panel > .button { grid-column: 1; }
   .download { grid-template-columns: 1fr; }
@@ -295,6 +307,7 @@ footer small { grid-column: 1 / -1; margin-top: 50px; padding-top: 24px; border-
   .future-intro .eyebrow { margin-bottom: 0; }
   .future-item { display: grid; grid-template-columns: 1fr auto; gap: 17px; padding: 30px 0; }
   .future-item > span { grid-column: 1; }.future-item h3 { grid-column: 1 / -1; }.future-item p { grid-column: 1 / -1; }.future-item em { grid-column: 2; grid-row: 1; }
+  .changelog { gap: 60px; padding: 105px 20px; }
   .install { padding: 105px 20px; }
   .install-panel { padding-top: 40px; }
   .install-panel .command-step { margin-left: 0; }
