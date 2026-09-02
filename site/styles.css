@@ -77,6 +77,8 @@ button { font: inherit; }
 .hero-lead { max-width: 510px; margin: 30px 0 0; color: #c7d1c8; font-size: clamp(17px, 1.5vw, 21px); line-height: 1.65; }
 .hero-actions { display: flex; align-items: center; gap: 12px; margin-top: 38px; }
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 24px; border-radius: 999px; font-size: 14px; font-weight: 750; transition: transform .22s ease, background .22s ease, color .22s ease; }
+.hero-actions .button { min-width: 174px; min-height: 62px; flex-direction: column; gap: 3px; }
+.hero-actions .button small { font-size: 10px; font-weight: 650; letter-spacing: .04em; opacity: .66; }
 .button:hover { transform: translateY(-2px); }
 .button.primary { background: var(--mint); color: var(--ink); }
 .button.primary:hover { background: #83efc1; }
