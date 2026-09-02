@@ -22,6 +22,7 @@
       <span>xixi</span>
     </a>
     <nav aria-label="主导航">
+      <a href="#scenarios">场景</a>
       <a href="#products">产品</a>
       <a href="#future">更多服务</a>
       <a href="#install">安装</a>
@@ -59,6 +60,48 @@
     <section class="statement reveal" aria-label="产品愿景">
       <p>一个目标，多种设备。</p>
       <h2>需要个人手机时，用无障碍协助；<br>需要稳定环境时，把任务交给 Desktop。</h2>
+    </section>
+
+    <section class="scenarios" id="scenarios" aria-labelledby="scenarios-title">
+      <div class="scenario-heading reveal">
+        <p class="eyebrow coral">REAL TASKS · VISIBLE PROGRESS</p>
+        <h2 id="scenarios-title">不只是操作手机，<br>而是完成一件具体的事。</h2>
+        <p>以下画面使用脱敏演示数据，展示任务从理解、跨应用执行到结果汇总的过程。</p>
+      </div>
+
+      <article class="scenario story-travel reveal">
+        <div class="scenario-copy">
+          <span class="scenario-number">01 / WEEKEND TRIP</span>
+          <h3>打开地图，规划一场周末度假</h3>
+          <p>告诉 xixi 出发时间和偏好，它可以打开地图、比较路线与路况，再把酒店、景点和返程安排整理成一份可执行行程。</p>
+          <ol><li>理解“周六上午出发，避开拥堵”</li><li>在地图应用中查询并比较路线</li><li>汇总时间、里程与行程提醒</li></ol>
+        </div>
+        <figure class="scene-capture map-capture" aria-label="周末度假路线规划示例场景">
+          <div class="capture-bar"><span>09:41</span><strong>周末行程规划</strong><i>示例</i></div>
+          <div class="map-surface" aria-hidden="true"><i class="road r1"></i><i class="road r2"></i><i class="road r3"></i><i class="route"></i><b class="pin start">家</b><b class="pin end">度假村</b><span class="map-water"></span></div>
+          <div class="agent-sheet"><span class="agent-state"><i></i>已完成地图查询</span><h4>莫干山两日路线已整理</h4><div class="route-summary"><b>2 小时 18 分</b><span>176 km</span><span>避开 2 处拥堵</span></div><p>建议周六 08:10 出发，先到庾村午餐，下午入住后前往观景台。</p><button type="button">查看完整行程</button></div>
+          <figcaption>示例场景 · 地图应用与 xixi 任务结果</figcaption>
+        </figure>
+      </article>
+
+      <article class="scenario story-office reveal">
+        <figure class="scene-capture office-capture" aria-label="飞书与企业微信消息汇总示例场景">
+          <div class="capture-bar"><span>10:08</span><strong>办公消息汇总</strong><i>示例</i></div>
+          <div class="source-stream">
+            <div><span class="app-badge feishu">飞</span><p><b>飞书 · 项目群</b><small>设计稿已确认，周三前需要补充埋点清单。</small></p><time>09:32</time></div>
+            <div><span class="app-badge wecom">企</span><p><b>企微 · 客户协作</b><small>客户希望下午 3 点前收到新的交付排期。</small></p><time>09:47</time></div>
+            <div><span class="app-badge feishu">飞</span><p><b>飞书 · 产品评审</b><small>明早评审改为 10:30，会议室不变。</small></p><time>10:01</time></div>
+          </div>
+          <div class="office-summary"><span>AI SUMMARY</span><h4>最近消息已归纳为 3 项</h4><ul><li><b>今天 15:00 前</b>发送客户交付排期</li><li><b>周三前</b>补充埋点清单</li><li><b>明天 10:30</b>参加产品评审</li></ul><button type="button">生成待办清单</button></div>
+          <figcaption>示例场景 · 经用户授权读取并汇总最近消息</figcaption>
+        </figure>
+        <div class="scenario-copy">
+          <span class="scenario-number">02 / WORK BRIEFING</span>
+          <h3>收集飞书与企微消息，提炼真正要做的事</h3>
+          <p>在用户授权和确认下，xixi 可以依次查看多个办公应用，把分散的最新消息整理成摘要、截止时间和行动项。</p>
+          <ol><li>按指定范围查看最近未读消息</li><li>跨飞书与企业微信合并同类事项</li><li>输出待办，不自动发送敏感内容</li></ol>
+        </div>
+      </article>
     </section>
 
     <section class="products" id="products">
