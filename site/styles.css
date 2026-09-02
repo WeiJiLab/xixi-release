@@ -149,6 +149,13 @@ button { font: inherit; }
 .future-item h3 { margin: 0; font-size: clamp(22px, 2.1vw, 31px); line-height: 1.25; letter-spacing: -.03em; }
 .future-item p { margin: 0; color: #5e6b64; line-height: 1.7; font-size: 14px; }
 .future-item em { justify-self: end; padding: 7px 9px; border: 1px solid rgba(7,17,14,.24); border-radius: 999px; color: #48574f; font: normal 700 9px/1 ui-monospace,monospace; letter-spacing: .08em; }
+.future-contact { display: flex; align-items: end; justify-content: space-between; gap: 40px; padding-top: 58px; }
+.future-contact span { color: #9b3f45; font: 800 9px/1 ui-monospace,monospace; letter-spacing: .15em; }
+.future-contact h3 { margin: 13px 0 0; font-size: 25px; letter-spacing: -.03em; }
+.future-contact p { margin: 9px 0 0; color: #5e6b64; font-size: 13px; }
+.future-contact a { padding-bottom: 7px; border-bottom: 1px solid rgba(7,17,14,.42); color: #0b1814; font-size: clamp(16px, 2vw, 22px); font-weight: 750; }
+.future-contact a i { display: inline-block; margin-left: 12px; font-style: normal; transition: transform .2s ease; }
+.future-contact a:hover i { transform: translate(3px,-3px); }
 
 .install { max-width: var(--max); margin: 0 auto; padding: 150px clamp(24px, 4vw, 64px); }
 .install-switcher { display: inline-flex; gap: 4px; padding: 4px; background: #101d18; border: 1px solid var(--line); border-radius: 999px; margin-bottom: 45px; }
@@ -221,6 +228,7 @@ footer small { grid-column: 1 / -1; margin-top: 50px; padding-top: 24px; border-
   .hero h1 { font-size: clamp(51px, 15vw, 76px); }
   .hero-lead { font-size: 16px; }
   .hero-actions { align-items: stretch; flex-direction: column; width: min(100%,330px); }
+  .future-contact { align-items: start; flex-direction: column; }
   .hero-stage { width: 108%; right: -2%; }
   .desktop-frame { transform: none; border-radius: 10px; }
   .window-bar { height: 20px; }
