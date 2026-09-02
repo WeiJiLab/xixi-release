@@ -23,7 +23,6 @@ jobs:
           gh release create "$VERSION" \
             "releases/$VERSION/xixifree-ai.apk" \
             "releases/$VERSION/xixi-Desktop-Node-macOS.dmg" \
-            "releases/$VERSION/xixi-system-runtime.apk" \
             "releases/$VERSION/SHA256SUMS.txt" \
             --title "xixi $VERSION" \
             --notes-file "releases/$VERSION/RELEASE_NOTES.md" \
