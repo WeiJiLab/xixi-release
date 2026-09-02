@@ -4,7 +4,6 @@
 
 - `xixifree-ai.apk`：Android 手机端
 - `xixi-Desktop-Node-macOS.dmg`：macOS Desktop
-- `xixi-system-runtime.apk`：配套 Runtime
 - `SHA256SUMS.txt`：文件完整性校验
 - `RELEASE_NOTES.md`：当前版本 Changelog
 

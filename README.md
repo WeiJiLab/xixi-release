@@ -10,7 +10,6 @@ xixi.ai 可以通过文字指令协助操作 Android 应用。本仓库仅提供
 |---|---|
 | xixiFree Android 版 | [下载 APK](releases/v0.3.2/xixifree-ai.apk) |
 | xixi Desktop macOS 版 | [下载 DMG](releases/v0.3.2/xixi-Desktop-Node-macOS.dmg) |
-| xixi Runtime | [下载 APK](releases/v0.3.2/xixi-system-runtime.apk) |
 
 文件校验信息见 [SHA256SUMS.txt](releases/v0.3.2/SHA256SUMS.txt)。
 
@@ -70,4 +69,3 @@ bash scripts/setup-desktop-macos.sh
 ## 使用提醒
 
 登录、验证码、支付和其他敏感操作请由用户本人完成。请仅在自己拥有或已获授权的设备、账号和应用上使用本软件。
-
