@@ -1,13 +1,26 @@
 {
-  "version": "v0.3.2",
-  "versionName": "0.3.2",
-  "sourceCommit": "5c523d39f3c2ea22f980ff059cc458f8fc405d07",
-  "sourceRun": "33587654959",
+  "version": "v0.4.0",
+  "versionName": "0.4.0",
+  "sourceCommit": "9ce64b5f4a35f0fb0a45733b669dc813996eb2d9",
+  "sourceRun": "33744648147",
   "stable": true,
   "releasedAt": null,
   "highlights": [
-    "xixiFree 与 Desktop 应用图标移除外围黑色背景，改为真实透明 PNG 边缘。",
-    "官网品牌图标与 favicon 改用无 `FREE` 角标的通用 xixi 品牌图标。",
-    "xixiFree 手机应用继续保留 `FREE` 角标，用于区分免费版本。"
-  ]
+    "xixiFree 与 Desktop 启动后可从公开发行仓库检查新版，展示版本说明并在用户确认后下载安装。",
+    "两端均提供更新提示开关和手动检查入口；Android 支持未知来源授权后续装，Desktop 显示下载进度并打开安装镜像。",
+    "发行元数据增加平台制品地址与 SHA-256，客户端会在安装前校验下载内容。",
+    "Agent 新增长列表连续采集动作，可在端侧滑动到底、合并去重多屏 UI 内容后一次性返回模型。",
+    "Agent 最大执行步数支持在设置中配置，默认值由 30 提升到 100。",
+    "优化 UI Tree 遍历、应用知识上下文查询与缓存，降低每一步观察阶段的等待时间。",
+    "Desktop 默认 Runtime 启动参数与 AVD 预检、系统服务装载和本机远程访问体验进一步完善。",
+    "修正无障碍语义点击的回退策略，减少有效点击后被重复手势干扰的问题。"
+  ],
+  "assets": {
+    "android": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.4.0/xixifree-ai.apk",
+    "desktopMacOS": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.4.0/xixi-Desktop-Node-macOS.dmg"
+  },
+  "sha256": {
+    "xixifree-ai.apk": "5322e2d3d72a3749f53fb0fe29dc8bef9dd482ec9e1b77c0ea53c0f7c39616d0",
+    "xixi-Desktop-Node-macOS.dmg": "1d03357816832f06d72ba8d6cff866aafb4d476a54ad1da32d595ba3a805db75"
+  }
 }
