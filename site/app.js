@@ -38,7 +38,12 @@ async function loadLatestBuild() {
       link.href = `${repoRoot}/releases/download/${folder}/xixifree-ai.apk`;
     });
     document.querySelectorAll('.js-download-desktop').forEach((link) => {
-      link.href = `${repoRoot}/releases/download/${folder}/xixi-Desktop-Node-macOS.dmg`;
+      link.href = build.assets?.desktopMacOS || `${repoRoot}/releases/download/${folder}/xixi-Desktop-Node-macOS.dmg`;
+    });
+    document.querySelectorAll('.js-download-desktop-arm64').forEach((link) => {
+      const url = build.assets?.desktopMacOSArm64;
+      if (url) link.href = url;
+      else link.hidden = true;
     });
     document.querySelectorAll('[data-release-version]').forEach((node) => { node.textContent = version; });
     document.querySelectorAll('[data-release-date]').forEach((node) => { node.textContent = build.releasedAt || ''; });

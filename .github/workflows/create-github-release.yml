@@ -20,10 +20,16 @@ jobs:
           set -euo pipefail
           test -d "releases/$VERSION"
           test -f "releases/$VERSION/RELEASE_NOTES.md"
+          assets=(
+            "releases/$VERSION/xixifree-ai.apk"
+            "releases/$VERSION/xixi-Desktop-Node-macOS.dmg"
+            "releases/$VERSION/SHA256SUMS.txt"
+          )
+          if [ -f "releases/$VERSION/xixi-Desktop-Node-macOS-arm64.dmg" ]; then
+            assets+=("releases/$VERSION/xixi-Desktop-Node-macOS-arm64.dmg")
+          fi
           gh release create "$VERSION" \
-            "releases/$VERSION/xixifree-ai.apk" \
-            "releases/$VERSION/xixi-Desktop-Node-macOS.dmg" \
-            "releases/$VERSION/SHA256SUMS.txt" \
+            "${assets[@]}" \
             --title "xixi $VERSION" \
             --notes-file "releases/$VERSION/RELEASE_NOTES.md" \
             --verify-tag

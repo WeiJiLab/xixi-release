@@ -222,6 +222,7 @@ button { font: inherit; }
 .download-copy > p:last-child { max-width: 550px; margin: 30px 0 0; color: #61272a; line-height: 1.7; }
 .download-actions { position: relative; z-index: 2; border-top: 1px solid rgba(22,11,12,.35); }
 .download-row { display: flex; align-items: center; justify-content: space-between; padding: 24px 0; border-bottom: 1px solid rgba(22,11,12,.35); }
+.download-row[hidden] { display: none; }
 .download-row b { display: block; font-size: 20px; }
 .download-row small { display: block; margin-top: 6px; color: #762f33; }
 .download-row > i { display: grid; place-items: center; width: 45px; height: 45px; border: 1px solid rgba(22,11,12,.42); border-radius: 50%; font-style: normal; transition: background .2s ease, transform .2s ease; }
