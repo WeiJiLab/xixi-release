@@ -1,25 +1,26 @@
 {
-  "version": "v0.5.1",
-  "versionName": "0.5.1",
-  "sourceCommit": "1f797405da3d10a5bf88dd22fa9faf62e380ddc0",
-  "sourceRun": "local-2026-09-27",
+  "version": "v0.6.0",
+  "versionName": "0.6.0",
+  "sourceCommit": "a939c17fd89dd1a17a11498b1ba1281d64ff9da9",
+  "sourceRun": "37868945198",
   "stable": true,
-  "releasedAt": "2026-09-27T03:14:23Z",
+  "releasedAt": null,
   "highlights": [
-    "Register and sign in through a guided flow using the app’s configured cloud service.",
-    "Knowledge base and scheduled tasks sync in the background after sign-in, with progress, success, retry, and failure details in the sidebar.",
-    "Changes to personal knowledge entries and scheduled tasks are queued for sync and resume when connectivity returns.",
-    "Knowledge sync omits screenshots and excludes device-specific or restricted content.",
-    "Fixed a crash when an update check finishes while the main view is being destroyed."
+    "支持在账号云端加密托管模型 API Key，由同步服务代为调用支持的模型；可在设置中管理托管配置。",
+    "知识库截图可在用户明确授权后同步到账号私有 OSS，并随知识库记录跨设备恢复。",
+    "Agent 增加悬浮快捷指令入口，可快速输入或发送语音和文字指令。",
+    "应用交互知识可按应用页面、控件和屏幕区域记录用户示教与 Agent 操作结果，并在后续操作时注入相关经验。",
+    "为复杂界面加入通用布局语义提示和多轮探索策略，帮助 Agent 识别内容分区、尝试滚动、展开/收起并根据界面变化验证结果。",
+    "修复托管模型 API Key 管理接口在云端因请求方法限制返回 403 的问题。",
+    "优化知识库截图、定时任务与账号同步服务的存储及访问策略。",
+    "更新无障碍交互、屏幕截图与应用交互知识架构文档。"
   ],
   "assets": {
-    "android": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.5.1/xixifree-ai.apk",
-    "desktopMacOS": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.5.1/xixi-Desktop-Node-macOS.dmg",
-    "desktopMacOSArm64": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.5.1/xixi-Desktop-Node-macOS-arm64.dmg"
+    "android": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.6.0/xixifree-ai.apk",
+    "desktopMacOS": "https://github.com/WeiJiLab/xixi-release/releases/download/v0.6.0/xixi-Desktop-Node-macOS.dmg"
   },
   "sha256": {
-    "xixifree-ai.apk": "fd52046b8dbd76e332fb3ce173d0a2dde9e2262f0468fb5a37608d93cad8b69b",
-    "xixi-Desktop-Node-macOS.dmg": "58c64277d20251ab67a86883a05ab6d5fc1734ad41654c47265c4729dc322332",
-    "xixi-Desktop-Node-macOS-arm64.dmg": "514748855993f0e4c86216bea6fb3858519d63a6ba7aa9d55cd70514030ea781"
+    "xixifree-ai.apk": "428d47a45c5764788ba2fcbca1117eb4c0fc2fa55ce7d2da38bb0bf93b753ca3",
+    "xixi-Desktop-Node-macOS.dmg": "603ffe568c7f5b8ac59ea13a3a02d5f21bfa24ba8ec9dfe84287487fa04412e7"
   }
 }
